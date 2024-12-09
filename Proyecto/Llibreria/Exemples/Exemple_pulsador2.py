@@ -1,7 +1,7 @@
 from classe_LED import *
 from classe_pulsador import *
 
-pulsador = Pulsador(4, False)
+pulsador = Pulsador(4, False, "pi_3")
 
 try:
     while True:

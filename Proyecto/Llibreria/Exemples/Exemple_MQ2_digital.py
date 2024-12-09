@@ -1,6 +1,6 @@
 from classe_MQ2 import *
 
-sensor = MQ2(pin=18)
+sensor = MQ2(18, "pi_3")
 try:
     while True:
         if sensor.detecta_particules():

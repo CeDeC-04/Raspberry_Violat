@@ -24,3 +24,8 @@ while 1:
     lcd.display_string('IP %s' % ( ipaddr ),2 )
     lcd.display_string('%s' % ( temp ),3 )
     sleep(2)
+    
+'''
+lcd.set_cursor(0, 3)  # Coloca el cursor en la posición 1, línea 3
+lcd.write(ord("A"), Rs)  # Escribe el carácter "A"
+'''
