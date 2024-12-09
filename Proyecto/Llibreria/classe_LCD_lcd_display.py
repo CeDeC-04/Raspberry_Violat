@@ -88,11 +88,15 @@ class lcd:
 
   def display_string(self, string, line):
     """display a string on the given line of the display, 1 or 2, string is truncated to 16 chars and centred"""
-    centered_string = string.center(16)
+    centered_string = string.center(20)
     if line == 1:
       self.write(0x80)
     if line == 2:
       self.write(0xC0)
+    if line == 3:
+      self.write(0x94)
+    if line == 4:
+      self.write(0xD4)
  
     for char in centered_string:
       self.write(ord(char), Rs)
@@ -113,3 +117,10 @@ class lcd:
   def display_on(self):
     """turn on the text display"""
     self.write(LCD_DISPLAYCONTROL | LCD_DISPLAYON)
+
+def set_cursor(self, col, row):
+    """Posiciona el cursor en la columna (0-19) y fila (1-4)."""
+    line_offsets = [0x80, 0xC0, 0x94, 0xD4]
+    if row < 1 or row > 4 or col < 0 or col > 19:
+        raise ValueError("Columna o fila fuera de rango")
+    self.write(line_offsets[row - 1] + col)

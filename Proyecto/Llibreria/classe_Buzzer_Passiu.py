@@ -131,5 +131,10 @@ melodies = {
     "to_desarmat" : ["Mi5", "Sol5", "Do5"],
     "to_notificacio" : ["Do5", "Fa5", "La5"],
     "to_error" : ["Re5", "Sol5", "Re5"],
-    "to_confirmacio" : ["Do6", "Mi6", "Sol6", "Do7"]
+    "to_confirmacio" : ["Do6", "Mi6", "Sol6", "Do7"],
+    "timbre_simple" : ["Do4", "Re4", "Mi4", "Fa4", "Sol4", "La4", "Si4", "Do5", "Do5", "Si4", "La4", "Sol4", "Fa4", "Mi4", "Re4", "Do4"],
+    "timbre_breu" : ["Do4", "Mi4", "Sol4", "Do5", "Sol4", "Do5", "Mi5", "Do5"],
+    "timbre_arpegi" : ["Do4", "Mi4", "Sol4", "Do5", "Sol4", "Mi4", "Do4"],
+    "timbre_alegre" : ["Do4", "Re4", "Mi4", "Re4", "Do4", "Mi4", "Re4", "Do4"],
+    "timbre_repetició" : ["Do4", "Re4", "Do4", "Re4", "Do4", "Re4", "Do4", "Re4"]
     }
